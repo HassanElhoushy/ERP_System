@@ -1,48 +1,33 @@
-Enterprise Resource Planning (ERP) System – DEPI Graduation Project
-Overview
-This project is a comprehensive Enterprise Resource Planning (ERP) System developed as the final graduation project for the Digital Egypt Pioneers Initiative (DEPI). The system is designed to provide a unified digital ecosystem for businesses, automating core operations such as inventory tracking, financial accounting, and performance analytics to ensure data-driven decision-making.
+# Enterprise Resource Planning (ERP) System – DEPI Graduation Project
 
-Features
-Inventory & Multi-Warehouse Management: Real-time tracking of quantities, stock movements across different locations, and product categorization.
+## Overview
+This project is a **comprehensive Enterprise Resource Planning (ERP) System** developed as part of the **Digital Egypt Pioneers Initiative (DEPI)**.  
+The system provides a unified platform to manage core business lifecycles, including procurement, inventory control, and financial accounting.
 
-Financial & Accounting Suite: Full management of Sales and Purchase cycles (Cash/Credit), including a Chart of Accounts and Journal entries.
+## Features
+- Smart inventory management across multiple warehouses  
+- Complete Sales and Purchase cycles with support for **Cash** and **Credit** transactions  
+- Accounting modules including **Chart of Accounts** and **Journal Entries**  
+- Dynamic reports with data visualization and **Excel export**  
+- Employee, supplier, and customer management  
+- Responsive UI with **Dark / Light modes** and full **RTL (Arabic) support**
 
-Dynamic Reporting & Analytics: Interactive dashboards for monthly sales/purchase trends with the ability to export data to Excel or print reports.
+## Tech Stack
+- **Backend:** ASP.NET Core MVC (.NET 8), Entity Framework Core  
+- **Frontend:** Razor Views, Bootstrap, JavaScript  
+- **Database:** SQL Server  
+- **Architecture:** Clean Architecture (Separation of Concerns)  
+- **Tools:** Git, GitHub, Visual Studio  
 
-User Management: Role-based access control for employees, along with dedicated modules for suppliers and customers.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HassanElhoushy/ERP_System_DEPI.git
+Update the database connection string in appsettings.json.
 
-Modern UI/UX: Fully responsive interface featuring professional Dark/Light modes and complete RTL (Arabic) support.
+Apply migrations to your local SQL Server:
 
-Supply Chain Integration: Comprehensive management of manufacturers, brands, and measurement units.
-
-Tech Stack
-Backend: ASP.NET Core MVC (.NET 8), Entity Framework Core.
-
-Frontend: Razor Views, Bootstrap, JavaScript (Support for Dark Mode and RTL).
-
-Database: SQL Server.
-
-Architecture: Clean Architecture (Onion Architecture) for better maintainability and scalability.
-
-Tools: Git, GitHub, Visual Studio 2022.
-
-Installation
-Clone the repository:
-
-Bash
-git clone https://github.com/HassanElhoushy/ERP_System_DEPI.git
-Configure the Database:
-
-Open appsettings.json.
-
-Update the DefaultConnection string with your local SQL Server credentials.
-
-Apply Migrations:
-
-Open the Package Manager Console in Visual Studio.
-
-Run the command: Update-Database.
-
-Run the application:
-
-Press F5 or click Start in Visual Studio to launch the system.
+bash
+Copy code
+dotnet ef database update
+Run the application using Visual Studio or the .NET CLI.
