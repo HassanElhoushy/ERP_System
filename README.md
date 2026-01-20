@@ -10,7 +10,7 @@ The system provides a unified platform to manage core business lifecycles, inclu
 - Accounting modules including **Chart of Accounts** and **Journal Entries**  
 - Dynamic reports with data visualization and **Excel export**  
 - Employee, supplier, and customer management  
-- Responsive UI with **Dark / Light modes** and full **RTL (Arabic) support**
+- Responsive UI with and full **RTL (Arabic) support**
 
 ## Tech Stack
 - **Backend:** ASP.NET Core MVC (.NET 8), Entity Framework Core  
