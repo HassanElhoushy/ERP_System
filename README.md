@@ -1,77 +1,48 @@
-Enterprise Resource Planning (ERP) System - DEPI Graduation Project
-A high-performance, enterprise-grade ERP solution engineered to automate and unify core business operations into a single, scalable digital ecosystem. Developed as a graduation project for the Digital Egypt Pioneers Initiative (DEPI).
+Enterprise Resource Planning (ERP) System – DEPI Graduation Project
+Overview
+This project is a comprehensive Enterprise Resource Planning (ERP) System developed as the final graduation project for the Digital Egypt Pioneers Initiative (DEPI). The system is designed to provide a unified digital ecosystem for businesses, automating core operations such as inventory tracking, financial accounting, and performance analytics to ensure data-driven decision-making.
 
-🚀 Overview
-This system transforms manual business operations into a data-driven environment, managing everything from procurement and inventory to complex financial reporting. It features a modern, responsive UI with full Dark Mode and RTL (Arabic) support.
+Features
+Inventory & Multi-Warehouse Management: Real-time tracking of quantities, stock movements across different locations, and product categorization.
 
-🛠 Tech Stack
-Framework: ASP.NET Core MVC (.NET 8).
+Financial & Accounting Suite: Full management of Sales and Purchase cycles (Cash/Credit), including a Chart of Accounts and Journal entries.
 
-Architecture: Clean Architecture (Onion Architecture) for strict Separation of Concerns.
+Dynamic Reporting & Analytics: Interactive dashboards for monthly sales/purchase trends with the ability to export data to Excel or print reports.
 
-Database: SQL Server with Entity Framework Core.
+User Management: Role-based access control for employees, along with dedicated modules for suppliers and customers.
 
-Data Logic: Advanced LINQ queries and database constraints for high data integrity.
+Modern UI/UX: Fully responsive interface featuring professional Dark/Light modes and complete RTL (Arabic) support.
 
-UI: Responsive design with support for Light/Dark modes and RTL localization.
+Supply Chain Integration: Comprehensive management of manufacturers, brands, and measurement units.
 
-✨ Key Features
-📦 Inventory & Warehouse Management
-Core Focus: Engineered robust tracking for real-time quantity monitoring and stock movements.
+Tech Stack
+Backend: ASP.NET Core MVC (.NET 8), Entity Framework Core.
 
-Multi-Warehouse Support: Manage stock across various locations with detailed transfer logs.
+Frontend: Razor Views, Bootstrap, JavaScript (Support for Dark Mode and RTL).
 
-Categorization: Comprehensive management of products, units (Piece, Box, etc.), and manufacturing brands.
+Database: SQL Server.
 
-💰 Financial & Accounting Suite
-Full Cycles: Integrated Sales and Purchase cycles supporting both Cash and Credit transactions.
+Architecture: Clean Architecture (Onion Architecture) for better maintainability and scalability.
 
-Accounting Tools: Includes a Chart of Accounts, Journal Entries, and dedicated tracking for Revenues and Expenses.
+Tools: Git, GitHub, Visual Studio 2022.
 
-Returns Management: Streamlined process for handling sales and purchase returns.
-
-📊 Advanced Analytics & Reporting
-Dynamic Dashboards: Interactive charts for monthly purchase/sales analysis and supplier performance.
-
-Data Portability: Built-in functionality for Excel Export and professional printing of reports.
-
-👥 Human Capital & Supply Chain
-User Management: Centralized database for Employees, Suppliers, and Customers.
-
-Role-Based Access: System security managed through defined user roles and permissions.
-
-🏗 Architecture
-The project follows Clean Architecture to ensure the code remains maintainable and testable:
-
-Domain: Core entities and business logic.
-
-Application: Interfaces, DTOs, and service logic.
-
-Infrastructure: Database context and external service implementations.
-
-Web UI: The presentation layer using ASP.NET Core MVC.
-
-📸 Screenshots
-(Add your screenshots here) | Dashboard | Inventory Management | | :--- | :--- | | | |
-
-⚙️ Getting Started
+Installation
 Clone the repository:
 
 Bash
-git clone https://github.com/YourUsername/ERP-System.git
-Update Connection String: Modify the appsettings.json file in the Web project with your SQL Server credentials.
+git clone https://github.com/HassanElhoushy/ERP_System_DEPI.git
+Configure the Database:
+
+Open appsettings.json.
+
+Update the DefaultConnection string with your local SQL Server credentials.
 
 Apply Migrations:
 
-Bash
-dotnet ef database update
-Run the Project:
+Open the Package Manager Console in Visual Studio.
 
-Bash
-dotnet run
-👨‍💻 Author
-Hassan Elhoushy
+Run the command: Update-Database.
 
-Computer Science Student at Tanta University
+Run the application:
 
-Specialized in .NET Development and Problem Solving
+Press F5 or click Start in Visual Studio to launch the system.
